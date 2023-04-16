@@ -1,0 +1,35 @@
+@import 'variable';
+%basket-module {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px 50px 5px 50px;
+}
+
+%button {
+  background-color: $theme-color;
+  padding: 4px 10px;
+  color: white;
+  width: max-content;
+  border: none;
+  border-radius: 15px;
+}
+
+%hover{
+    &:hover {
+        transform: translateY(-6px);
+        transition: ease 0.5s;
+      }
+}
+
+%title{
+    width: 33%;
+    font-size: 32px;
+    font-family: $title-font;
+    span {
+      font-family: $title-font;
+      color: $theme2-color;
+      &:nth-child(1){
+        color: $theme-color;
+      }
+    }
+}

@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap");
+.products-card div i, .navbar-tel i {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px 50px 5px 50px;
+}
+
+.order-card-left button, .products-card div button, .banner-left button {
+  background-color: rgb(188, 0, 22);
+  padding: 4px 10px;
+  color: white;
+  width: -moz-max-content;
+  width: max-content;
+  border: none;
+  border-radius: 15px;
+}
+
+.products-card:hover {
+  transform: translateY(-6px);
+  transition: ease 0.5s;
+}
+
+.footer-title, .navbar-title {
+  width: 33%;
+  font-size: 32px;
+  font-family: "Sedgwick Ave Display";
+}
+.footer-title span, .navbar-title span {
+  font-family: "Sedgwick Ave Display";
+  color: #ffc736;
+}
+.footer-title span:nth-child(1), .navbar-title span:nth-child(1) {
+  color: rgb(188, 0, 22);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.back {
+  position: relative;
+}
+.back-ground {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  background-color: rgb(188, 0, 22);
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.navbar-menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-menu a:nth-child(1) {
+  color: rgb(188, 0, 22);
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar-menu a:nth-child(2) {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar-menu a {
+  text-decoration: none;
+}
+.navbar-tel {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+.navbar-tel span {
+  color: white;
+  display: flex;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar-tel span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .navbar-tel span {
+    display: none;
+  }
+}
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+.banner-left {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner-left {
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .banner-left {
+    width: 80%;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+  }
+}
+.banner-left h4 {
+  font-size: 36px;
+}
+.banner-left p {
+  font-size: 15px;
+}
+.banner-middle {
+  position: relative;
+}
+.banner-middle span {
+  position: absolute;
+  z-index: 5;
+  top: 15%;
+  right: 15%;
+  background-color: #ffc736;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+}
+.banner-middle img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-middle img:hover {
+  transform: translateY(-6px);
+  transition: ease 0.5s;
+}
+.banner-right {
+  width: 33%;
+  padding: 10px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner-right {
+    background-color: white;
+    width: 80%;
+    border-radius: 15px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .banner-right {
+    width: 80%;
+    border-radius: 15px;
+    background-color: white;
+  }
+}
+.banner-right h4 {
+  font-size: 34px;
+  color: #ffc736;
+}
+.banner-right:hover {
+  transform: scaleY();
+  transition: ease 0.5s;
+}
+.banner-right p {
+  color: white;
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .banner-right p {
+    color: black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner-right p {
+    color: black;
+  }
+}
+
+.product {
+  width: 100%;
+  background-color: #ffc736;
+  padding: 50px 50px;
+  border-top: 5px solid black;
+  position: relative;
+}
+.product-title {
+  text-align: center;
+  color: rgb(188, 0, 22);
+}
+.product-title span {
+  font-size: 22px;
+  font-family: "Sedgwick Ave Display";
+}
+.products {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.products-card {
+  width: 275px;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 15px 0;
+  box-shadow: 1px 1px 5px 0px rgb(188, 0, 22);
+}
+.products-card-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+.products-card-title span {
+  background-color: #ffc736;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 30px;
+}
+.products-card img {
+  background-color: rgb(188, 0, 22);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products-card p {
+  font-size: 24px;
+  color: rgb(188, 0, 22);
+}
+.products-card span {
+  color: rgb(188, 0, 22);
+  text-align: center;
+  color: gray;
+  margin: 10px 0;
+}
+.products-card div {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.products-card div i {
+  background-color: black;
+  color: white;
+}
+/* ORDER */
+.order {
+  border-top: 5px solid #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 50px 0;
+  position: relative;
+}
+.order-card {
+  box-shadow: 2px 2px 9px 0 black;
+  justify-content: space-between;
+  background-color: rgb(188, 0, 22);
+  transform: rotate(5deg);
+  display: flex;
+}
+.order-card-left {
+  color: white;
+  padding: 0px 0px 15px 15px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+.order-card-left button {
+  background-color: white;
+  color: black;
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .order-card-left button {
+    font-size: 12px;
+  }
+}
+.order-card-left button:hover {
+  transform: scale(1.2);
+  transition: ease-out 0.7s;
+}
+.order-card-right {
+  width: 45%;
+  background-color: #ffc736;
+}
+.order-card-right img {
+  width: 300px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .order-card-right img {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .order-card-right img {
+    width: 150px;
+  }
+}
+
+.social {
+  border-top: 5px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(188, 0, 22);
+  padding: 20px 50px;
+  gap: 5px;
+  width: 100%;
+}
+.social-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+  padding: 0 20px;
+}
+.social-card {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.social-cards {
+  flex: 1 1 150px;
+  background-color: white;
+  border-radius: 100%;
+  max-width: 200px;
+}
+
+.footer {
+  border-top: 5px solid #000;
+  display: flex;
+  padding: 20px 50px;
+  width: 100%;
+  background-color: white;
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+.footer-title ul {
+  display: flex;
+  gap: 5px;
+}
+.footer-title ul li:hover {
+  color: rgb(188, 0, 22);
+}
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.footer-menu ul {
+  width: 300px;
+  text-align: end;
+  min-width: 200px;
+  padding: 5px 0;
+}
+.footer-menu ul li:nth-child(1) {
+  font-weight: 700;
+}
+.footer-menu ul li:hover {
+  color: #ffc736;
+}/*# sourceMappingURL=style.css.map */
